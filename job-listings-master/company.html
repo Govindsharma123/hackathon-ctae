@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post a Job</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body class="bg-gray-100 font-sans">
+  <div class="container mx-auto py-12 px-4" 
+    background-image: back 
+    background-repeat: no-repeat; 
+    background-position: center; 
+     background-size: cover; 
+  
+  >
+    <h1 class="text-3xl font-bold mb-4">Post a New Job</h1>
+    <form id="job-form" class="flex flex-col space-y-2">
+      <label for="title">Job Title</label>
+      <input type="text" id="title" name="title" class="rounded-md border border-gray-300 px-3 py-2 focus:ring-blue-500 focus:border-blue-500 required">
+      <label for="job-mode">Work Mode</label>
+      <select id="job-mode" name="job_mode" class="rounded-md border border-gray-300 px-3 py-2 focus:ring-blue-500 focus:border-blue-500 required">
+        <option value="">Select</option>
+        <option value="work_from_home">Work From Home</option>
+        <option value="work_from_office">Work From Office</option>
+      </select>
+      <label for="description">Job Description</label>
+      <textarea id="description" name="description" class="rounded-md border border-gray-300 px-3 py-2 focus:ring-blue-500 focus:border-blue-500 required"></textarea>
+      <label for="location">Job Location</label>
+      <input type="text" id="location" name="location" class="rounded-md border border-gray-300 px-3 py-2 focus:ring-blue-500 focus:border-blue-500 required">
+      <label for="salary-range">Expected Salary Range</label>
+      <input type="text" id="salary-range" name="salary_range" class="rounded-md border border-gray-300 px-3 py-2 focus:ring-blue-500 focus:border-blue-500 required">
+      <label for="post-date">Date Posted</label>
+      <input type="date" id="post-date" name="post_date" class="rounded-md border border-gray-300 px-3 py-2 focus:ring-blue-500 focus:border-blue-500 required">
+      <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Post Job</button>
+    </form>
+    
+    <script>
+      // Simulate form submission (replace with actual logic)
+      const form = document.getElementById('job-form');
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        alert('Job posted successfully!');
+      });
+    </script>
+  </div>
+</body>
+</html>
