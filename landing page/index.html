@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Portal</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color:#cde4ec;
+      color: #fff;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem; /* Adjust font size as needed */
+      line-height: 1.5; /* Adjust line height as needed */
+    }
+
+
+    .image-container {
+      width: 50%;
+      margin-bottom: 2rem;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-evenly;
+      width: 50%;
+    }
+
+    button {
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .hire-btn {
+      background-color: #096285;
+    }
+
+    .get-job-btn {
+      background-color: #096285;
+    }
+  </style>
+</head>
+<body>
+    <div class="header">
+        <p class="text-black taxt-large">India's Largest Job Portal<br>WorkIndia helps you hire staff in 2 days</p>
+      </div>
+  <div class="image-container">
+    <img src="landing_hero.webp" alt="WorkIndia Job Portal">
+  </div>
+  <div class="buttons">
+    <button class="hire-btn">Hire Now</button>
+    <button class="get-job-btn">Get A Job</button>
+  </div>
+</body>
+</html>
